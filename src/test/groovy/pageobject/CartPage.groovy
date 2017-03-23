@@ -9,18 +9,18 @@ import static org.assertj.core.api.Assertions.*;
 
 class CartPage extends DefaultPage{
 
-    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[4]/div/a[2]")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr28633746_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[3]/div/a[2]")
     private WebElement firstProductInstanceCount
 
-    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_lbtnUpdateQtyAndVariants\"]")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr28633746_ViewBasket_BasketDetails_lbtnUpdateQtyAndVariants\"]")
     private WebElement updateBagBtn
 
     //@FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl02_ProductTotalPrice")
-    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[6]/span[2]")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr28633746_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[6]/span[2]")
     private static WebElement firstCostHolder
 
     //@FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl03_ProductTotalPrice")
-    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[2]/td[6]/span[2]")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr28633746_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[2]/td[6]/span[2]")
     private static WebElement secondCostHolder
 
     //DELETE FLYER
