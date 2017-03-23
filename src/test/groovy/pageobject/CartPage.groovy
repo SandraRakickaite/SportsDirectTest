@@ -9,22 +9,25 @@ import static org.assertj.core.api.Assertions.*;
 
 class CartPage extends DefaultPage{
 
-    @FindBy(xpath = "//*[@id=\"dnn_ctr12876_View_BasketDetail_CartContents\"]/table/tbody/tr[1]/td[3]/a[2]")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[4]/a[2]")
     private WebElement firstProductInstanceCount
 
-    @FindBy(xpath = "//*[@id=\"dnn_ctr12876_View_BasketDetail_UpdateQty\"]")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_lbtnUpdateQtyAndVariants\"]")
     private WebElement updateBagBtn
 
-    @FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl02_ProductTotalPrice")
+    //@FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl02_ProductTotalPrice")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[6]/span[2]")
     private static WebElement firstCostHolder
 
-    @FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl03_ProductTotalPrice")
+    //@FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl03_ProductTotalPrice")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[2]/td[6]/span[2]")
     private static WebElement secondCostHolder
 
-    @FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl04_ProductTotalPrice")
-    private static WebElement flyerCostHolder
+    //DELETE FLYER
+   // @FindBy(id = "dnn_ctr12876_View_BasketDetail_CartContents_ctl04_ProductTotalPrice")
+    //private static WebElement flyerCostHolder
 
-    @FindBy(id = "dnn_ctr12876_View_BasketDetail_SubTotal")
+    @FindBy(id = "BasketSummarySubtotalValue")
     private static WebElement totalCostHolder
 
     public CartPage() {
@@ -40,8 +43,8 @@ class CartPage extends DefaultPage{
     }
 
     static double getActualTotalCost() {
-        getCostOf(firstCostHolder)+getCostOf(secondCostHolder)+
-                getCostOf(flyerCostHolder) //since sportsdirect adds optional paid flyers
+        getCostOf(firstCostHolder)+getCostOf(secondCostHolder)
+        //+getCostOf(flyerCostHolder) //since sportsdirect adds optional paid flyers DELETE
     }
 
     static void checkIfTotalCostIsCorrect() {
