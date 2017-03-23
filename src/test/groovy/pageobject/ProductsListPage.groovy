@@ -16,7 +16,6 @@ class ProductsListPage extends DefaultPage {
     public ProductsListPage() {
         driver = new DriverFactory().getDriver()
         PageFactory.initElements(driver, this)
-        Thread.sleep(3000);
     }
 
     public ItemPage chooseFirstItem() {
