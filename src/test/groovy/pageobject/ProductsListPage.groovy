@@ -10,7 +10,7 @@ class ProductsListPage extends DefaultPage {
     @FindBy(xpath = "//*[@li-productid=\"75502290\"]/div/div[1]/a[1]")
     private WebElement firstItemFromProductsList
 
-    @FindBy(xpath = "//*[@id=\"dnn_ctr51055_BrowseV3View_lstProducts_liItem_1\"]/div/div[1]/a[2]")
+    @FindBy(xpath = "//*[@li-productid=\"75502291\"]/div/div[1]/a[2]")
     private WebElement secondItemFromProductsList
 
     public ProductsListPage() {
