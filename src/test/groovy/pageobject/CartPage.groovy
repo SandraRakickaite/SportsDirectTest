@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.*;
 
 class CartPage extends DefaultPage{
 
-    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[4]/a[2]")
+    @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[4]/div/a[2]")
     private WebElement firstProductInstanceCount
 
     @FindBy(xpath = "//*[@id=\"dnn_ctr1628848_ViewBasket_BasketDetails_lbtnUpdateQtyAndVariants\"]")
