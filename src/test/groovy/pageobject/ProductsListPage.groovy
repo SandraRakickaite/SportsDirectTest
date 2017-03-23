@@ -7,7 +7,7 @@ import utils.DriverFactory
 
 class ProductsListPage extends DefaultPage {
 
-    @FindBy(xpath = "//*[@id=\"dnn_ctr51055_BrowseV3View_lstProducts_liItem_0\"]/div/div[1]/a[1]")
+    @FindBy(xpath = "//*[@id=\"75502290\"]/div/div[1]/a[1]")
     private WebElement firstItemFromProductsList
 
     @FindBy(xpath = "//*[@id=\"dnn_ctr51055_BrowseV3View_lstProducts_liItem_1\"]/div/div[1]/a[2]")
