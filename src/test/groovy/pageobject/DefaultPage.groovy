@@ -9,7 +9,7 @@ import utils.DriverFactory
 class DefaultPage {
 
     protected static final Logger log = LoggerFactory.getLogger(DefaultPage.class)
-    protected static final BASE_URL = "http://www.sportsdirect.com"
+    protected static final BASE_URL = "http://lv.sportsdirect.com"
 
     protected WebDriver driver
 
