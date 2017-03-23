@@ -7,6 +7,7 @@ import utils.DriverFactory
 
 class ProductsListPage extends DefaultPage {
 
+    Thread.sleep(3000);
     @FindBy(xpath = "//*[@id=\"dnn_ctr51055_BrowseV3View_lstProducts_liItem_0\"]/div/div[1]/a[1]")
     private WebElement firstItemFromProductsList
 
@@ -16,6 +17,7 @@ class ProductsListPage extends DefaultPage {
     public ProductsListPage() {
         driver = new DriverFactory().getDriver()
         PageFactory.initElements(driver, this)
+        Thread.sleep(3000);
     }
 
     public ItemPage chooseFirstItem() {
