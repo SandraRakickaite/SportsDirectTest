@@ -13,13 +13,13 @@ class CartPage extends DefaultPage{
     private WebElement firstProductInstanceCount
 
     @FindBy(xpath = "//*[@id=\"dnn_ctr28633746_ViewBasket_BasketDetails_lbtnUpdateQtyAndVariants\"]")
-    private WebElement updateBagBtn
+    private  WebElement updateBagBtn
 
     @FindBy(xpath = "//*[@id=\"dnn_ctr28633746_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[1]/td[6]/span[2]")
-    private WebElement firstCostHolder
+    private static WebElement firstCostHolder
     
     @FindBy(xpath = "//*[@id=\"dnn_ctr28633746_ViewBasket_BasketDetails_gvBasketDetails\"]/table/tbody/tr[2]/td[6]/span[2]")
-    private WebElement secondCostHolder
+    private static WebElement secondCostHolder
 
     @FindBy(id = "BasketSummarySubtotalValue")
     private static WebElement totalCostHolder
