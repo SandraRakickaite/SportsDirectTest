@@ -54,6 +54,6 @@ class CartPage extends DefaultPage{
         String str = holder.getText().substring(0)
         String replStr = str.replace(",", ".")
         String remStr = replStr.replace("[^0-9.]","")
-        replStr as double
+        remStr as double
     }
 }
