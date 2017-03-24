@@ -51,6 +51,7 @@ class CartPage extends DefaultPage{
     }
 
     private static double getCostOf(WebElement holder) {
-        String str = holder.getText().substring(1, str.length()-2) as double
+        String str = holder.getText()
+        str = str.substring(1, str.length()-2) as double
     }
 }
